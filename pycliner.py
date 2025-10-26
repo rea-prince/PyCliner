@@ -72,7 +72,7 @@ def load_data(file_path):
         print(f"Unsupported file type: {sfx}")
         return None
 
-    print("Loaded " str(len(df)) + " rows and " + str(len(df.columns)) + " columns.")
+    print("Loaded " + str(len(df)) + " rows and " + str(len(df.columns)) + " columns.")
 
     return df
 
