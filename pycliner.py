@@ -54,8 +54,6 @@ def main():
             run_program = False
 
 
-        
-
 def load_data(file_path):
     path = pathlib.Path(file_path)
 
@@ -73,10 +71,11 @@ def load_data(file_path):
     else:
         print(f"Unsupported file type: {sfx}")
         return None
-    
-    print(f"Loaded {len(df)} rows and {len(df.columns)} columns.")
+
+    print("Loaded " str(len(df)) + " rows and " + str(len(df.columns)) + " columns.")
 
     return df
+
 
 def missing_values(df):
     initial = len(df)
